@@ -8,14 +8,19 @@
     <title>Тестовое ADWIN</title>
     <link href="style.css" rel="stylesheet">
     <link href="output.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
+
 </head>
-<body>
-<div class="wrapper max-w-[800px] justify-center items-center my-auto mx-auto min-h-[100vh] flex items-center px-20 py-20 ">
+<body class="font-sans">
+<div class="wrapper max-w-[800px] justify-center items-center my-auto mx-auto min-h-[100vh] flex px-20 py-20 ">
     <div class="container bg-gray-300 flex flex-col max-w-[440px] min-w-[315px] shadow-[0_2px_5px_2px_rgba(0,0,0,0.15)]  min-h-[380px]">
         <button class="button mt-[12px] flex self-end mr-[12px] bg-white border-gray-200 border-[1px] rounded-[8px] py-[6px] px-[10px] text-gray-800 font-medium text-xs">
             button
         </button>
-        <div class="menu flex flex-col px-[16px] py-[12px] bg-white mt-auto">
+        <div class="menu group flex flex-col px-[16px] py-[12px] bg-white mt-auto">
             <div class="menu__top flex items-center justify-between w-[100%] mb-[12px]">
                 <div class="flex flex-col">
                     <span class="text-gray-500 text-sm font-normal">Subhead</span>
@@ -23,7 +28,7 @@
                 </div>
                 <span class="text-gray-800 font-medium text-lg">Text</span>
             </div>
-            <ul class="list flex flex-col gap-[8px] border-t-[1px] pt-[12px]">
+            <ul class="list group-hover:flex transition-all max-h-0 overflow-hidden group-hover:max-h-[300px] opacity-0 group-hover:opacity-100 flex-col gap-[8px] border-t-[1px] pt-[12px]">
                 <li class="flex justify-between">
                     <p class="font-normal text-sm text-gray-500">text</p>
                     <a href="#" class="font-normal text-sm text-gray-800">link</a>
